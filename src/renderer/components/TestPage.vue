@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h1>hellworld</h1>
+        <h1>test page</h1>
+
+        <router-link to="/">to main paged</router-link>
      <pockage></pockage>
 
      <div class="alert alert-primary" role="alert">
@@ -27,25 +29,25 @@
 <div class="alert alert-dark" role="alert">
   This is a dark alert—check it out!
 </div>
-<br><br><br>
 
-<router-link to='/test-page'> to test page </router-link>
-
-<br> 
     </div>
 </template>
 
+
 <script>
-import Pockage from "./PockagePage/Pockage";
+import Pockage from './PockagePage/Pockage'
 export default {
-  name: "pockage-page",
-  components: { Pockage }
-};
+        name: 'test-page',
+  components: {Pockage}
+}
 </script>
 
 
 
 <style>
+
+  @import url('../assets/css/bootstrap.min.css');
+
 
 </style>
 
