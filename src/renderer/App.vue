@@ -6,12 +6,11 @@
 
 <script>
   export default {
-    name: 'chqportal'
-  }
+    name: "chqportal"
+  };
 </script>
 
 <style>
   /* CSS */
   @import url("./assets/css/bootstrap.min.css");
-
 </style>
