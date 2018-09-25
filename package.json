@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "陈洪强 <baiawxk@qq.com>",
   "description": "An electron-vue project",
-  "license": null,
+  "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
