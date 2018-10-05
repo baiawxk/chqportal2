@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <router-view/>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "chqportal"
-  };
+export default {
+  name: 'app'
+}
 </script>
 
-<style>
-  /* CSS */
-  @import url("./assets/css/bootstrap.min.css");
+<style lang="scss">
+@import '~@/assets/style/public-class.scss';
 </style>

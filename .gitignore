@@ -9,4 +9,6 @@ npm-debug.log
 npm-debug.log.*
 thumbs.db
 bower_components
+plugins
+temp
 !.gitkeep
