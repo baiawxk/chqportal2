@@ -19,6 +19,10 @@ const asideMenuConfig = [
     icon: 'folder-o',
     children: [
       {
+        name: '导航',
+        path: '/navigationPage/'
+      },
+      {
         name: '定时任务',
         path: '/jobPage/'
       },
@@ -26,10 +30,7 @@ const asideMenuConfig = [
         name: '神奇口袋',
         path: '/pocketPage/'
       },
-      {
-        name: '导航',
-        path: '/navigationPage/'
-      }
+      
     ]
   }
 ]

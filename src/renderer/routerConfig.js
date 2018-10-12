@@ -9,6 +9,7 @@ import Error404 from './pages/Error404'
 import Demo1 from './pages/Demo1'
 import Demo2 from './pages/Demo2'
 import HeaderAside from './layouts/HeaderAside'
+import NavigationPage from  './pages/NavigationPage'
 
 // 变量名 routerConfig 为 iceworks 检测关键字
 // ice 会自动在这个变量下添加路由数据
@@ -55,7 +56,7 @@ const routerConfig = [
     path: '/navigationPage/',
     name: 'navigationPage',
     layout: HeaderAside,
-    component: Demo1,
+    component: NavigationPage,
     meta: {
       title: '导航'
     }
