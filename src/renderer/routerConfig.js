@@ -34,13 +34,40 @@ const routerConfig = [
     component: Index
   },
   {
+    path: '/jobPage/',
+    name: 'jobPage',
+    layout: HeaderAside,
+    component: Demo1,
+    meta: {
+      title: '定时任务'
+    }
+  },
+  {
+    path: '/pocketPage/',
+    name: 'pocketPage',
+    layout: HeaderAside,
+    component: Demo1,
+    meta: {
+      title: '神奇口袋'
+    }
+  },
+  {
+    path: '/navigationPage/',
+    name: 'navigationPage',
+    layout: HeaderAside,
+    component: Demo1,
+    meta: {
+      title: '导航'
+    }
+  },
+  {
     path: '/demo1',
     name: 'demo1', 
     layout: HeaderAside,
     component: Demo1,
     meta: {
       requiresAuth: true,
-      title: '演示 1'
+      title: '定时任务'
     }
   },
   {

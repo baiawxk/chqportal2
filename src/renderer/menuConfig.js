@@ -15,16 +15,20 @@ import utilIce from './libs/util-ice'
 
 const asideMenuConfig = [
   {
-    name: '演示页面',
+    name: '我的功能',
     icon: 'folder-o',
     children: [
       {
-        name: '演示 1',
-        path: '/demo1/'
+        name: '定时任务',
+        path: '/jobPage/'
       },
       {
-        name: '演示 2',
-        path: '/demo2/'
+        name: '神奇口袋',
+        path: '/pocketPage/'
+      },
+      {
+        name: '导航',
+        path: '/navigationPage/'
       }
     ]
   }

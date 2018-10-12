@@ -1,5 +1,7 @@
 <template>
   <d2-container class="page">
+    <h1>fdsafds</h1>
+    <News/>
     <d2-page-cover
       title="I AM D2ADMIN"
       sub-title="追求简约美感的后台管理系统集成方案">
@@ -35,9 +37,11 @@
 
 <script>
 import D2HelpBtn from './components/d2-help-btn'
+import News from '../News'
 export default {
   components: {
-    D2HelpBtn
+    D2HelpBtn,
+    News
   }
 }
 </script>
