@@ -27,9 +27,12 @@ import 'element-ui/lib/theme-chalk/index.css'
 // http://element-cn.eleme.io/#/zh-CN/component/layout
 import 'element-ui/lib/theme-chalk/display.css'
 
+import helper from './plugin/helper'
+
 // 核心插件
 Vue.use(d2Admin)
 Vue.use(ElementUI)
+Vue.use(helper)
 
 // 可选插件组件
 // https://github.com/d2-projects/d2-crud
