@@ -20,19 +20,23 @@ import router from './router'
 import menuHeader from '@/menu/header'
 import menuAside from '@/menu/aside'
 import { frameInRoutes } from '@/router/routes'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
 
 // import 'element-ui/lib/theme-chalk/display.css'
 // http://element-cn.eleme.io/#/zh-CN/component/layout
-import 'element-ui/lib/theme-chalk/display.css'
+// import 'element-ui/lib/theme-chalk/display.css'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import helper from './plugin/helper'
 
 // 核心插件
 Vue.use(d2Admin)
-Vue.use(ElementUI)
+// Vue.use(ElementUI)
 Vue.use(helper)
+Vue.use(BootstrapVue)
 
 // 可选插件组件
 // https://github.com/d2-projects/d2-crud
