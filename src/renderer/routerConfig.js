@@ -67,7 +67,7 @@ const routerConfig = [
     layout: HeaderAside,
     component: Demo1,
     meta: {
-      requiresAuth: true,
+      requiresAuth: false,
       title: '定时任务'
     }
   },
