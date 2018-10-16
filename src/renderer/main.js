@@ -19,6 +19,11 @@ import { frameInRoutes } from './routerConfig'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+
+// import 'element-ui/lib/theme-chalk/display.css'
+// http://element-cn.eleme.io/#/zh-CN/component/layout
+import 'element-ui/lib/theme-chalk/display.css'
+
 // 核心插件
 Vue.use(d2Admin)
 Vue.use(ElementUI)
