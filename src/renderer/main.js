@@ -17,8 +17,11 @@ import router from './router'
 import { menuHeader, menuAside } from './menuConfig'
 import { frameInRoutes } from './routerConfig'
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 // 核心插件
 Vue.use(d2Admin)
+Vue.use(ElementUI)
 
 new Vue({
   router,
