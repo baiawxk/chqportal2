@@ -18,9 +18,7 @@ export default {
     Vue.mixin({
       methods: {
         openMenu (index, indexPath) {
-          console.log('baiawxk2',index);
           if (/^https:\/\/|http:\/\//.test(index)) {
-            console.log(index,'baiawxk');
             util.open(index)
           } else {
             this.$router.push({

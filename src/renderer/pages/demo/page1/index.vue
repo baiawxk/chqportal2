@@ -12,27 +12,13 @@
       </el-container> -->
       <el-row>
         <el-col :span="24">
-          <div class="grid-content bg-purple-dark" >
-            <!-- <template v-for="group in menuGroups"> -->
-              <el-card class="box-card" v-for="group in menuGroups" :key="group.index"> 
-                <div slot="header" class="clearfix">
-                  <span>{{group.name}}</span>
-                  <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
-                </div>
-                <div v-for="menu in group.menus" :key="menu.index" class="text item">
-                  <el-button plain @click="openMenu(menu.url)">{{menu.name}}</el-button>
-                </div>
-              </el-card>
-            <!-- </template> -->
-
-            <el-card class="box-card">
+          <div class="grid-content bg-purple-dark">
+            <el-card class="box-card" v-for="group in menuGroups" :key="group.index">
               <div slot="header" class="clearfix">
-                <span>卡片名称</span>
-                <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                <span>{{group.name}}</span>
+                <!-- <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button> -->
               </div>
-              <div v-for="o in 4" :key="o" class="text item">
-                {{'列表内容 ' + o }}
-              </div>
+              <el-button v-for="menu in group.menus" :key="menu.index" plain @click="openMenu(menu.url)">{{menu.name}}</el-button>
             </el-card>
           </div>
         </el-col>
