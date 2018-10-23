@@ -56,6 +56,7 @@
     }
   },
   "dependencies": {
+    "@d2-projects/d2-crud": "^1.2.0",
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
     "better-scroll": "^1.13.0",
@@ -63,11 +64,14 @@
     "dayjs": "^1.7.7",
     "element-ui": "^2.4.7",
     "flex.css": "^1.1.7",
+    "fuse.js": "^3.3.0",
+    "hotkeys-js": "^3.3.8",
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.11",
     "lowdb": "^1.0.0",
     "mockjs": "^1.0.1-beta3",
     "normalize.css": "^8.0.0",
+    "nprogress": "^0.2.0",
     "particles.js": "^2.0.0",
     "screenfull": "^3.3.3",
     "ua-parser-js": "^0.7.18",
