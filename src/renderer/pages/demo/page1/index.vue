@@ -28,29 +28,29 @@
       let devMenus = {
         name: '本软件常用的API网站',
         menus: [{
-            name: 'Element UI',
-            url: 'http://element-cn.eleme.io/#/zh-CN/component/layout'
-          },
-          {
-            name: 'D2Admin',
-            url: 'https://d2-projects.github.io/d2-admin-doc/zh/learn-guide/getting-started.html#%E6%95%88%E6%9E%9C'
-          },
-          {
-            name: 'Bootstrap-Vue',
-            url: 'https://B-vue.js.org/'
-          },
-          {
-            name: 'Bootstrap 4',
-            url: 'https://v4.bootcss.com/'
-          },
-          {
-            name: 'Electron',
-            url: 'https://electronjs.org/docs'
-          },
-          {
-            name: 'Vue',
-            url: 'https://cn.vuejs.org/'
-          }
+          name: 'Element UI',
+          url: 'http://element-cn.eleme.io/#/zh-CN/component/layout'
+        },
+        {
+          name: 'D2Admin',
+          url: 'https://d2-projects.github.io/d2-admin-doc/zh/learn-guide/getting-started.html#%E6%95%88%E6%9E%9C'
+        },
+        {
+          name: 'Bootstrap-Vue',
+          url: 'https://B-vue.js.org/'
+        },
+        {
+          name: 'Bootstrap 4',
+          url: 'https://v4.bootcss.com/'
+        },
+        {
+          name: 'Electron',
+          url: 'https://electronjs.org/docs'
+        },
+        {
+          name: 'Vue',
+          url: 'https://cn.vuejs.org/'
+        }
         ]
       }
       // console.log(devMenus);

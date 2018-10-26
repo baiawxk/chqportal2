@@ -1,4 +1,4 @@
-import util from '@/libs/util'
+import opn from 'opn'
 
 export default {
   install (Vue, options) {
@@ -19,7 +19,7 @@ export default {
       methods: {
         openMenu (index, indexPath) {
           if (/^https:\/\/|http:\/\//.test(index)) {
-            util.open(index)
+            opn(index)
           } else {
             this.$router.push({
               path: index
