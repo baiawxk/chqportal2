@@ -1,11 +1,13 @@
-import { version } from '../../package'
+import {
+  version
+} from '../../package'
 
 const setting = {
   // 快捷键
   // 支持快捷键 例如 ctrl+shift+s
   hotkey: {
     search: {
-      open: 's',
+      open: 'cmd+f',
       close: 'esc'
     }
   },
@@ -15,15 +17,13 @@ const setting = {
   },
   // 在读取持久化数据失败时默认页面
   page: {
-    opened: [
-      {
-        name: 'index',
-        meta: {
-          title: '首页',
-          requiresAuth: false
-        }
+    opened: [{
+      name: 'index',
+      meta: {
+        title: '首页',
+        requiresAuth: false
       }
-    ]
+    }]
   },
   // 版本
   releases: {
@@ -36,8 +36,7 @@ const setting = {
   },
   // 注册的主题
   theme: {
-    list: [
-      {
+    list: [{
         title: 'd2admin 经典',
         name: 'd2',
         preview: 'image/theme/d2/preview@2x.png'
