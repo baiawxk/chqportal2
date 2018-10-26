@@ -19,6 +19,7 @@ import D2Crud from '@d2-projects/d2-crud'
 import router from './router'
 import menuHeader from '@/menu/header'
 import menuAside from '@/menu/aside'
+import menuData from '@/menu/menuConfig'
 import { frameInRoutes } from '@/router/routes'
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
@@ -55,7 +56,7 @@ new Vue({
     // 设置侧边栏菜单
     this.$store.commit('d2admin/menu/asideSet', menuAside)
     // 初始化菜单搜索功能
-    this.$store.commit('d2admin/search/init', menuHeader)
+    this.$store.commit('d2admin/search/init', menuData)
   },
   mounted () {
     // 展示系统信息
