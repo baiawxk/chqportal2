@@ -1,30 +1,35 @@
 <template>
   <d2-container>
-    <!-- <template slot="header">导航</template> -->
+    <template slot="header">导航</template>
     <!-- <template slot="footer">footer</template> -->
 
     <b-container class="bv-example-row">
-      <div v-for="group in menuGroups" :key="group.index">
-        <div>
-          <b-row>
-            <h4>{{group.name}}</h4>
-          </b-row>
-        </div>
-        <div>
-          <b-row>
-            <b-button-group>
-              <template v-for="(menu,index) in group.menus">
-                <b-button :variant=" (index%2 == 0) ? 'success':'primary' " :key="index" @click="openMenu(menu.url)">{{menu.name}}</b-button>
-              </template>
-            </b-button-group>
-          </b-row>
-        </div>
+      <div v-for="group in menuGroups" :key="group.index" class="m-1,p-3">
+        <b-row>
+          <b-alert variant="primary" show>{{group.name}}</b-alert>
+        </b-row>
+        <b-row>
+          <!-- <b-button-group> -->
+          <!-- <template v-for="(menu,index) in group.menus">
+            <b-button :variant=" (index%2 == 0) ? 'success':'primary' " :key="index" @click="openMenu(menu.url)">{{menu.name
+              || menu.title}}</b-button>
+          </template> -->
+          <b-list-group>
+            <b-list-group-item :variant=" (index%2 == 0) ? '':'secondary' " button v-for="(menu,index) in group.menus" :key="index" @click="openMenu(menu.url)">
+              {{menu.name || menu.title}}
+           </b-list-group-item>
+          </b-list-group>
+          <!-- </b-button-group> -->
+        </b-row>
+        <br>
       </div>
     </b-container>
   </d2-container>
 </template>
 
 <script>
+  import menuData from '@/menu/menuConfig'
+
   export default {
     name: 'page1',
     data: function () {
@@ -40,7 +45,7 @@
           },
           {
             name: 'Bootstrap-Vue',
-            url: 'https://B-vue.js.org/'
+            url: 'https://bootstrap-vue.js.org/docs/components/alert'
           },
           {
             name: 'Bootstrap 4',
@@ -56,9 +61,14 @@
           }
         ]
       }
-      // console.log(devMenus);
+
+      let bookmark = {
+        name: 'bookmark',
+        menus: menuData
+      }
+
       return {
-        menuGroups: [devMenus]
+        menuGroups: [devMenus, bookmark]
       }
     }
   }

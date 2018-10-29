@@ -31,7 +31,8 @@
       "dist/electron/**/*"
     ],
     "dmg": {
-      "contents": [{
+      "contents": [
+        {
           "x": 410,
           "y": 150,
           "type": "link",
@@ -62,6 +63,7 @@
     "bookmarks-parser": "^1.1.0",
     "bootstrap-vue": "^2.0.0-rc.11",
     "dayjs": "^1.7.7",
+    "electron": "^3.0.6",
     "element-ui": "^2.4.7",
     "flex.css": "^1.1.7",
     "fuse.js": "^3.3.0",
@@ -71,8 +73,8 @@
     "lowdb": "^1.0.0",
     "mockjs": "^1.0.1-beta3",
     "normalize.css": "^8.0.0",
-    "opn": "^5.4.0",
     "nprogress": "^0.2.0",
+    "opn": "^5.4.0",
     "particles.js": "^2.0.0",
     "screenfull": "^3.3.3",
     "ua-parser-js": "^0.7.18",
