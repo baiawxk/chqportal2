@@ -1,51 +1,21 @@
 <template>
     <d2-container>
-        <p class="content"><b>Selected:</b> {{ selected }}</p>
-        <b-field label="Find a JS framework">
-            <b-autocomplete
-                rounded
-                v-model="name"
-                :data="filteredDataArray"
-                placeholder="e.g. jQuery"
-                icon="magnify"
-                @select="option => selected = option">
-                <template slot="empty">No results found</template>
-            </b-autocomplete>
-        </b-field>
+        <b-tabs type="is-boxed">
+            <b-tab-item label="Pictures" icon="google-photos"></b-tab-item>
+            <b-tab-item label="Music" icon="library-music"></b-tab-item>
+            <b-tab-item label="Videos" icon="video"></b-tab-item>
+        </b-tabs>
+
+        <b-tabs type="is-toggle">
+            <b-tab-item label="Pictures" icon="google-photos"></b-tab-item>
+            <b-tab-item label="Music" icon="library-music"></b-tab-item>
+            <b-tab-item label="Videos" icon="video"></b-tab-item>
+        </b-tabs>
+
+        <b-tabs type="is-toggle-rounded">
+            <b-tab-item label="Pictures" icon="google-photos"></b-tab-item>
+            <b-tab-item label="Music" icon="library-music"></b-tab-item>
+            <b-tab-item label="Videos" icon="video"></b-tab-item>
+        </b-tabs>
     </d2-container>
 </template>
-
-<script>
-    export default {
-      data () {
-        return {
-          data: [
-            'Angular',
-            'Angular 2',
-            'Aurelia',
-            'Backbone',
-            'Ember',
-            'jQuery',
-            'Meteor',
-            'Node.js',
-            'Polymer',
-            'React',
-            'RxJS',
-            'Vue.js'
-          ],
-          name: '',
-          selected: null
-        }
-      },
-      computed: {
-        filteredDataArray () {
-          return this.data.filter((option) => {
-            return option
-              .toString()
-              .toLowerCase()
-              .indexOf(this.name.toLowerCase()) >= 0
-          })
-        }
-      }
-    }
-</script>
