@@ -3,7 +3,7 @@ let [TYPE_URL, TYPE_VUE_URL] = ['url', 'vue_url']
 let menus = []
 let urlMenus = require('./temp/output')
 
-function initUrlMenus({
+function initUrlMenus ({
   menus,
   type = TYPE_URL
 }) {
@@ -24,14 +24,14 @@ function initUrlMenus({
   return newMenus
 }
 
-function initVueUrlMenus({
+function initVueUrlMenus ({
   menus,
   type = TYPE_VUE_URL
 }) {
   return []
 }
 
-function init() {
+function init () {
   return [...initUrlMenus({
     menus: urlMenus
   }), ...initVueUrlMenus({

@@ -30,7 +30,7 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         dismissSecs: 10,
         dismissCountDown: 0,
@@ -38,10 +38,10 @@
       }
     },
     methods: {
-      countDownChanged(dismissCountDown) {
+      countDownChanged (dismissCountDown) {
         this.dismissCountDown = dismissCountDown
       },
-      showAlert() {
+      showAlert () {
         this.dismissCountDown = this.dismissSecs
       }
     }

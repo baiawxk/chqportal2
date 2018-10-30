@@ -33,6 +33,11 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import helper from './plugin/helper'
 
+import Buefy from 'buefy'
+import 'buefy/dist/buefy.css'
+// https://buefy.github.io/documentation/start
+Vue.use(Buefy)
+
 // 核心插件
 Vue.use(d2Admin)
 // Vue.use(ElementUI)

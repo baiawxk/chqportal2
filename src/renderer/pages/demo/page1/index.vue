@@ -68,7 +68,7 @@
       }
 
       return {
-        menuGroups: [devMenus, bookmark]
+        menuGroups: [devMenus]
       }
     }
   }
