@@ -19,7 +19,7 @@ import D2Crud from '@d2-projects/d2-crud'
 import router from './router'
 import menuHeader from '@/menu/header'
 import menuAside from '@/menu/aside'
-import menuData from '@/menu/menuConfig'
+// import menuData from '@/menu/menuConfig'
 import { frameInRoutes } from '@/router/routes'
 // import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/index.css'
@@ -27,22 +27,29 @@ import { frameInRoutes } from '@/router/routes'
 // import 'element-ui/lib/theme-chalk/display.css'
 // http://element-cn.eleme.io/#/zh-CN/component/layout
 // import 'element-ui/lib/theme-chalk/display.css'
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+// import BootstrapVue from 'bootstrap-vue'
+// import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import helper from './plugin/helper'
 
 import Buefy from 'buefy'
+import { Table } from 'buefy/dist/components/table'
+import { Input } from 'buefy/dist/components/input'
 import 'buefy/dist/buefy.css'
 // https://buefy.github.io/documentation/start
-Vue.use(Buefy)
+Vue.use(Buefy, {
+  defaultIconPack: 'fas'
+  // defaultContainerElement: '#content'
+})
+Vue.component('b-table', Table)
+Vue.component('b-input', Input)
 
 // 核心插件
 Vue.use(d2Admin)
 // Vue.use(ElementUI)
 Vue.use(helper)
-Vue.use(BootstrapVue)
+// Vue.use(BootstrapVue)
 
 // 可选插件组件
 // https://github.com/d2-projects/d2-crud
@@ -61,7 +68,7 @@ new Vue({
     // 设置侧边栏菜单
     this.$store.commit('d2admin/menu/asideSet', menuAside)
     // 初始化菜单搜索功能
-    this.$store.commit('d2admin/search/init', menuData)
+    this.$store.commit('d2admin/search/init', menuAside)
   },
   mounted () {
     // 展示系统信息

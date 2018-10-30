@@ -1,13 +1,18 @@
 <template>
-  <d2-container>
-    <template slot="header">Page 3 header</template>
-    Hello World
-    <template slot="footer">footer</template>
-  </d2-container>
+    <d2-container>
+        <button class="button block" @click="isActive = !isActive">Toggle</button>
+        <b-notification :active.sync="isActive">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id fermentum quam. Proin sagittis, nibh id hendrerit imperdiet, elit sapien laoreet elit
+        </b-notification>
+    </d2-container>
 </template>
 
 <script>
-export default {
-  name: 'page3'
-}
+    export default {
+        data() {
+            return {
+                isActive: true
+            }
+        }
+    }
 </script>

@@ -1,49 +1,35 @@
 <template>
-  <d2-container>
-    <template slot="header">Page 2 header</template>
-    <div>
-      <b-alert show>Default Alert</b-alert>
+    <d2-container>
+        <b-field label="Name">
+            <b-input value="Kevin Garvey"></b-input>
+        </b-field>
 
-      <b-alert variant="success" show>Success Alert</b-alert>
+        <b-field label="Email"
+            type="is-danger"
+            message="This email is invalid">
+            <b-input type="email"
+                value="john@"
+                maxlength="30">
+            </b-input>
+        </b-field>
 
-      <b-alert variant="danger" dismissible :show="showDismissibleAlert" @dismissed="showDismissibleAlert=false">
-        Dismissible Alert!
-      </b-alert>
+        <b-field label="Username"
+            type="is-success"
+            message="This username is available">
+            <b-input value="johnsilver" maxlength="30"></b-input>
+        </b-field>
 
-      <b-alert :show="dismissCountDown" dismissible variant="warning" @dismissed="dismissCountDown=0"
-        @dismiss-count-down="countDownChanged">
-        <p>This alert will dismiss after {{dismissCountDown}} seconds...</p>
-        <b-progress variant="warning" :max="dismissSecs" :value="dismissCountDown" height="4px">
-        </b-progress>
-      </b-alert>
+        <b-field label="Password"
+            type="is-warning"
+            :message="['Password is too short', 'Password must have at least 8 characters']">
+            <b-input value="123" type="password" maxlength="30"></b-input>
+        </b-field>
 
-      <b-btn @click="showAlert" variant="info" class="m-1">
-        Show alert with count-down timer
-      </b-btn>
-      <b-btn @click="showDismissibleAlert=true" variant="info" class="m-1">
-        Show dismissible alert ({{showDismissibleAlert?'visible':'hidden'}})
-      </b-btn>
-    </div>
-    <template slot="footer">footer</template>
-  </d2-container>
+        <b-field label="Subject">
+            <b-select placeholder="Select a subject">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </b-select>
+        </b-field>
+    </d2-container>
 </template>
-
-<script>
-  export default {
-    data () {
-      return {
-        dismissSecs: 10,
-        dismissCountDown: 0,
-        showDismissibleAlert: false
-      }
-    },
-    methods: {
-      countDownChanged (dismissCountDown) {
-        this.dismissCountDown = dismissCountDown
-      },
-      showAlert () {
-        this.dismissCountDown = this.dismissSecs
-      }
-    }
-  }
-</script>
