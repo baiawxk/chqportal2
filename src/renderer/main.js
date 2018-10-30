@@ -34,16 +34,17 @@ import { frameInRoutes } from '@/router/routes'
 import helper from './plugin/helper'
 
 import Buefy from 'buefy'
-import { Table } from 'buefy/dist/components/table'
-import { Input } from 'buefy/dist/components/input'
+// import { Table } from 'buefy/dist/components/table'
+// import { Input } from 'buefy/dist/components/input'
 import 'buefy/dist/buefy.css'
+// import 'material-design-icons/iconfont/material-icons.css'
 // https://buefy.github.io/documentation/start
 Vue.use(Buefy, {
-  defaultIconPack: 'fas'
+  defaultIconPack: 'mdi'
   // defaultContainerElement: '#content'
 })
-Vue.component('b-table', Table)
-Vue.component('b-input', Input)
+// Vue.component('b-table', Table)
+// Vue.component('b-input', Input)
 
 // 核心插件
 Vue.use(d2Admin)

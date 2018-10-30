@@ -50,11 +50,11 @@
 
 <script>
     export default {
-        data() {
-            return {
-                isImageModalActive: false,
-                isCardModalActive: false
-            }
+      data () {
+        return {
+          isImageModalActive: false,
+          isCardModalActive: false
         }
+      }
     }
 </script>

@@ -9,10 +9,10 @@
 
 <script>
     export default {
-        data() {
-            return {
-                isActive: true
-            }
+      data () {
+        return {
+          isActive: true
         }
+      }
     }
 </script>

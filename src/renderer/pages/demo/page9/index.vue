@@ -1,13 +1,44 @@
 <template>
-  <d2-container>
-    <template slot="header">Page 3 header</template>
-    Hello World
-    <template slot="footer">footer</template>
-  </d2-container>
+    <d2-container>
+        <b-field>
+            <b-checkbox-button v-model="checkboxGroup"
+                native-value="Nop"
+                type="is-danger">
+                <b-icon icon="close"></b-icon>
+                <span>Nop</span>
+            </b-checkbox-button>
+
+            <b-checkbox-button v-model="checkboxGroup"
+                native-value="Yep"
+                type="is-success">
+                <b-icon icon="check"></b-icon>
+                <span>Yep</span>
+            </b-checkbox-button>
+
+            <b-checkbox-button v-model="checkboxGroup"
+                native-value="Default">
+                Default
+            </b-checkbox-button>
+
+            <b-checkbox-button v-model="checkboxGroup"
+                native-value="Disabled"
+                disabled>
+                Disabled
+            </b-checkbox-button>
+        </b-field>
+        <p class="content">
+            <b>Selection:</b>
+            {{ checkboxGroup }}
+        </p>
+    </d2-container>
 </template>
 
 <script>
-export default {
-  name: 'page3'
-}
+    export default {
+      data () {
+        return {
+          checkboxGroup: []
+        }
+      }
+    }
 </script>

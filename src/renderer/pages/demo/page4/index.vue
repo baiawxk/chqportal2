@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         data: [
           'Angular',
@@ -32,7 +32,7 @@
       }
     },
     computed: {
-      filteredDataArray() {
+      filteredDataArray () {
         return this.data.filter((option) => {
           return option
             .toString()
