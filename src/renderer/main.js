@@ -14,6 +14,17 @@ import d2Admin from '@/plugin/d2admin'
 
 // [ 可选插件组件 ]D2-Crud
 import D2Crud from '@d2-projects/d2-crud'
+// [ 可选插件组件 ] 图表
+import VCharts from 'v-charts'
+// [ 可选插件组件 ] 右键菜单
+import contentmenu from 'v-contextmenu'
+import 'v-contextmenu/dist/index.css'
+// [ 可选插件组件 ] JSON 树状视图
+import vueJsonTreeView from 'vue-json-tree-view'
+// [ 可选插件组件 ] 网格布局组件
+import { GridLayout, GridItem } from 'vue-grid-layout'
+// [ 可选插件组件 ] 区域划分组件
+import SplitPane from 'vue-splitpane'
 
 // 菜单和路由设置
 import router from './router'
@@ -55,6 +66,12 @@ Vue.use(helper)
 // 可选插件组件
 // https://github.com/d2-projects/d2-crud
 Vue.use(D2Crud)
+Vue.use(VCharts)
+Vue.use(contentmenu)
+Vue.use(vueJsonTreeView)
+Vue.component('d2-grid-layout', GridLayout)
+Vue.component('d2-grid-item', GridItem)
+Vue.component('SplitPane', SplitPane)
 
 new Vue({
   router,
@@ -74,11 +91,23 @@ new Vue({
   mounted () {
     // 展示系统信息
     this.$store.commit('d2admin/releases/versionShow')
+    // 检查最新版本
+    this.$store.dispatch('d2admin/releases/checkUpdate')
     // 用户登录后从数据库加载一系列的设置
     this.$store.dispatch('d2admin/account/load')
     // 获取并记录用户 UA
     this.$store.commit('d2admin/ua/get')
     // 初始化全屏监听
     this.$store.dispatch('d2admin/fullscreen/listen')
+  },
+  watch: {
+    // 监听路由 控制侧边栏显示
+    '$route.matched': {
+      handler (val) {
+        const _side = menuAside.filter(menu => val[0].path.indexOf(menu.path) == 0)// menu.path === val[0].path
+        this.$store.commit('d2admin/menu/asideSet', _side.length > 0 ? _side[0].children : [])
+      }
+      // immediate: true
+    }
   }
 }).$mount('#app')
