@@ -39,14 +39,14 @@
 
 <script>
     export default {
-        data() {
-            return {
-                tags: [
-                    'Auckland',
-                    'Wellington',
-                    'Napier'
-                ]
-            }
+      data () {
+        return {
+          tags: [
+            'Auckland',
+            'Wellington',
+            'Napier'
+          ]
         }
+      }
     }
 </script>

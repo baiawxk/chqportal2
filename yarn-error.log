@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add material-design-icons
+  /usr/local/bin/node /usr/local/bin/yarn add clipboard-polyfill
 
 PATH: 
   /Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin:.:.
@@ -79,6 +79,7 @@ npm manifest:
       "bookmarks-parser": "^1.1.0",
       "bootstrap-vue": "^2.0.0-rc.11",
       "buefy": "^0.7.0",
+      "clipboard-polyfill": "^2.7.0",
       "dayjs": "^1.7.7",
       "electron": "^3.0.6",
       "element-ui": "^2.4.7",
@@ -95,6 +96,7 @@ npm manifest:
       "opn": "^5.4.0",
       "particles.js": "^2.0.0",
       "screenfull": "^3.3.3",
+      "text-loader": "^0.0.1",
       "ua-parser-js": "^0.7.18",
       "vue": "^2.5.16",
       "vue-electron": "^1.0.6",
@@ -2429,6 +2431,10 @@ Lockfile:
   cli-width@^2.0.0:
     version "2.2.0"
     resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.2.0.tgz#ff19ede8a9a5e579324147b0c11f0fbcbabed639"
+  
+  clipboard-polyfill@^2.7.0:
+    version "2.7.0"
+    resolved "https://registry.yarnpkg.com/clipboard-polyfill/-/clipboard-polyfill-2.7.0.tgz#4f4344bb3405f88609ccf8ee2d445018da0e318f"
   
   cliui@^2.1.0:
     version "2.1.0"
@@ -9327,6 +9333,10 @@ Lockfile:
       object-assign "^4.1.0"
       read-pkg-up "^1.0.1"
       require-main-filename "^1.0.1"
+  
+  text-loader@^0.0.1:
+    version "0.0.1"
+    resolved "https://registry.yarnpkg.com/text-loader/-/text-loader-0.0.1.tgz#8bf75d749b7c0579c939920051c69ea572ebddc1"
   
   text-table@^0.2.0, text-table@~0.2.0:
     version "0.2.0"
