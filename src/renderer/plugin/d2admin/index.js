@@ -8,9 +8,11 @@ import store from '@/store/index'
 // 组件
 import '@/components'
 // svg 图标
-// import '@/assets/svg-icons'
+// import '!svg-sprite-loader!@/assets/svg-icons'
 // 功能插件
 import pluginError from '@/plugin/error'
+import pluginExport from '@/plugin/export'
+import pluginImport from '@/plugin/import'
 import pluginLog from '@/plugin/log'
 import pluginOpen from '@/plugin/open'
 
@@ -29,6 +31,8 @@ export default {
     })
     // 插件
     Vue.use(pluginError)
+    Vue.use(pluginExport)
+    Vue.use(pluginImport)
     Vue.use(pluginLog)
     Vue.use(pluginOpen)
     // 设置为 false 以阻止 vue 在启动时生成生产提示。

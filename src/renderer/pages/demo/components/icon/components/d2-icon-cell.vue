@@ -1,11 +1,6 @@
 <template>
   <div>
-    <el-popover
-      ref="pop"
-      placement="right"
-      :title="icon"
-      width="300"
-      trigger="click">
+    <el-popover ref="pop" placement="right" :title="icon" width="300" trigger="click">
       <div class="icon-group">
         <i :class="'fa fa-' + icon"></i>
       </div>
