@@ -99,15 +99,15 @@ new Vue({
     this.$store.commit('d2admin/ua/get')
     // 初始化全屏监听
     this.$store.dispatch('d2admin/fullscreen/listen')
-  },
-  watch: {
-    // 监听路由 控制侧边栏显示
-    '$route.matched': {
-      handler (val) {
-        const _side = menuAside.filter(menu => val[0].path.indexOf(menu.path) == 0)// menu.path === val[0].path
-        this.$store.commit('d2admin/menu/asideSet', _side.length > 0 ? _side[0].children : [])
-      }
-      // immediate: true
-    }
   }
+  // watch: {
+  //   // 监听路由 控制侧边栏显示
+  //   '$route.matched': {
+  //     handler (val) {
+  //       const _side = menuAside.filter(menu => val[0].path.indexOf(menu.path) == 0)// menu.path === val[0].path
+  //       this.$store.commit('d2admin/menu/asideSet', _side.length > 0 ? _side[0].children : [])
+  //     }
+  //     // immediate: true
+  //   }
+  // }
 }).$mount('#app')

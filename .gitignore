@@ -9,7 +9,6 @@ npm-debug.log
 npm-debug.log.*
 thumbs.db
 bower_components
-plugins
 yarn-error.log
 yarn.lock
 !.gitkeep
