@@ -327,6 +327,22 @@ export default {
       })
     }
   },
+  getters: {
+    /**
+     * @description 从当前所有打开的多标签页里返回需要缓存的页面 name
+     * @param {*} state vuex state
+     */
+    keepAlive (state) {
+      return state.opened.filter(item => {
+        if (item.meta) {
+          if (item.meta.notCache) {
+            return false
+          }
+        }
+        return true
+      }).map(e => e.name)
+    }
+  },
   mutations: {
     /**
      * @class keepAlive
