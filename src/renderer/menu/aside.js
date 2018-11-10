@@ -15,14 +15,16 @@ import demoD2Crud from './modules/demo-d2-crud'
 // 第三方网页
 import demoFrame from './modules/demo-frame'
 
-let demoNum = 30
-let demos = []
-for (let i = 0; i < demoNum; i++) {
-  demos.push({
-    path: `/demo/page${i + 1}`,
-    title: `demo ${i + 1}`
-  })
-}
+import demos from './demos'
+
+// let demoNum = 30
+// let demos = []
+// for (let i = 0; i < demoNum; i++) {
+//   demos.push({
+//     path: `/demo/page${i + 1}`,
+//     title: `demo ${i + 1}`
+//   })
+// }
 
 const menuAside = [
   demoComponents,
