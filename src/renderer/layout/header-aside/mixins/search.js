@@ -1,4 +1,7 @@
-import { mapState, mapMutations } from 'vuex'
+import {
+  mapState,
+  mapMutations
+} from 'vuex'
 
 import hotkeys from 'hotkeys-js'
 
@@ -46,6 +49,9 @@ export default {
       if (!this.searchActive) {
         this.searchSet(true)
         this.$refs.panelSearch.focus()
+      } else {
+        this.$refs.panelSearch.focus()
+        this.searchText = ''
       }
     },
     // 关闭搜索面板

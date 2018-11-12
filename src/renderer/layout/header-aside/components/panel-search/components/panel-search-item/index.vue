@@ -2,14 +2,17 @@
   <div class="d2-panel-search-item" :class="hoverMode ? 'can-hover' : ''" flex>
     <div class="d2-panel-search-item__icon" flex-box="0">
       <div class="d2-panel-search-item__icon-box" flex="main:center cross:center">
-        <d2-icon v-if="item.icon" :name="item.icon"/>
+        <i v-if="item.iconDataUrl" >
+          <img :src="item.iconDataUrl" style="width:25px;height:25px;" alt="" srcset="">
+        </i>
+        <d2-icon v-else-if="item.icon" :name="item.icon"/>
         <d2-icon-svg v-else-if="item.iconSvg" :name="item.iconSvg"/>
         <d2-icon v-else name="file-o"/>
       </div>
     </div>
     <div class="d2-panel-search-item__info" flex-box="1" flex="dir:top">
       <div class="d2-panel-search-item__info-title" flex-box="1" flex="cross:center">
-        <span>{{item.title}}</span>
+        <span>{{item.title || item.name}}</span>
       </div>
       <div class="d2-panel-search-item__info-fullTitle" flex-box="0">
         <span>{{item.fullTitle}}</span>
@@ -35,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/assets/style/public.scss';
+@import "~@/assets/style/public.scss";
 .d2-panel-search-item {
   height: 64px;
   margin: 0px -20px;
@@ -43,7 +46,7 @@ export default {
     @extend %unable-select;
     margin: 0px;
     &:hover {
-      background-color: #F5F7FA;
+      background-color: #f5f7fa;
       .d2-panel-search-item__icon {
         .d2-panel-search-item__icon-box {
           i {

@@ -1,16 +1,30 @@
 import layoutHeaderAside from '@/layout/header-aside'
 
-const meta = { requiresAuth: false }
+const meta = {
+  requiresAuth: false
+}
+
+let demoNum = 30
+let demos = []
+for (let i = 0; i < demoNum; i++) {
+  demos.push({
+    path: `page${i + 1}`,
+    name: `demo-page${i + 1}`,
+    component: () => import(`@/pages/demo/page${i + 1}`),
+    meta: {
+      meta,
+      title: `demo ${i + 1}`
+    }
+  })
+}
 
 export default {
   path: '/demo',
   name: 'demo',
   meta,
-  redirect: { name: 'demo-page1' },
+  redirect: {
+    name: 'demo-page1'
+  },
   component: layoutHeaderAside,
-  children: (pre => [
-    { path: 'page1', name: `${pre}page1`, component: () => import('@/pages/demo/page1'), meta: { meta, title: '导航' } },
-    { path: 'page2', name: `${pre}page2`, component: () => import('@/pages/demo/page2'), meta: { meta, title: '页面 2' } },
-    { path: 'page3', name: `${pre}page3`, component: () => import('@/pages/demo/page3'), meta: { meta, title: '页面 3' } }
-  ])('demo-')
+  children: (pre => [...demos])('demo-')
 }

@@ -1,0 +1,25 @@
+<html>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+
+
+$(function() {
+    var a = {"errorMessage":"","scanResult":"00020101021226270012hk.com.hkicl02071187368520400005303344540510.005802HK5902NA6002HK6217011300-461001212263043BFD\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000","state":"00","token":"xxxxxx"};
+
+var scanResult = a.scanResult;
+
+
+var temp = $.trim(scanResult);
+
+
+console.log(scanResult,scanResult.length);
+
+console.log(temp,temp.length,temp.replace(/^[\u0000-\u001f]+/,'').replace(/[\u0000-\u001f]+$/,''));
+
+
+
+});
+
+</script>
+</html>

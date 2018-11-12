@@ -21,9 +21,9 @@
         :clearable="true"
         @keydown.esc.native="handleEsc"
         @select="handleSelect">
-        <d2-panel-search-item
+        <!-- <d2-panel-search-item
           slot-scope="{ item }"
-          :item="item"/>
+          :item="item"/> -->
       </el-autocomplete>
       <div class="panel-search__tip">
         您可以使用快捷键
@@ -56,11 +56,10 @@ import Fuse from 'fuse.js'
 import { mapState } from 'vuex'
 import mixin from '../mixin/menu'
 export default {
-  mixins: [
-    mixin
-  ],
+  mixins: [mixin],
   components: {
-    'd2-panel-search-item': () => import('./components/panel-search-item/index.vue')
+    'd2-panel-search-item': () =>
+      import('./components/panel-search-item/index.vue')
   },
   data () {
     return {
@@ -69,16 +68,15 @@ export default {
     }
   },
   computed: {
-    ...mapState('d2admin/search', [
-      'hotkey',
-      'pool'
-    ]),
+    ...mapState('d2admin/search', ['hotkey', 'pool']),
     // 这份数据是展示在搜索面板下面的
     resultsList () {
-      return (this.results.length === 0 && this.searchText === '') ? this.pool.map(e => ({
-        value: e.fullTitle,
-        ...e
-      })) : this.results
+      return this.results.length === 0 && this.searchText === ''
+        ? this.pool.map(e => ({
+          value: e.fullTitle,
+          ...e
+        }))
+        : this.results
     }
   },
   methods: {
@@ -105,10 +103,7 @@ export default {
         distance: 100,
         maxPatternLength: 32,
         minMatchCharLength: 1,
-        keys: [
-          'fullTitle',
-          'path'
-        ]
+        keys: ['fullTitle', 'path']
       })
         .search(queryString)
         .map(e => ({
@@ -149,6 +144,7 @@ export default {
         this.handleEsc()
         return
       }
+      this.searchText = ''
       // 用户选择的是其它页面
       this.$nextTick(() => {
         this.handleMenuSelect(path)
@@ -183,7 +179,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~@/assets/style/public.scss';
+@import "~@/assets/style/public.scss";
 .panel-search {
   margin: 20px;
   .panel-search__input-group {

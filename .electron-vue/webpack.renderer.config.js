@@ -72,6 +72,10 @@ let rendererConfig = {
         use: 'node-loader'
       },
       {
+        test: /\.md$/,
+        use: 'text-loader'
+      },
+      {
         test: /\.vue$/,
         use: {
           loader: 'vue-loader',

@@ -4,7 +4,7 @@
       <i v-if="menu.icon" :class="`fa fa-${menu.icon}`"></i>
       <d2-icon-svg v-else-if="menu.iconSvg" :name="menu.iconSvg"/>
       <i v-else class="fa fa-folder-o"></i>
-      <span slot="title">{{menu.title}}</span>
+      <span slot="title">{{menu.title || menu.name}}</span>
     </template>
     <template v-for="(child, childIndex) in menu.children">
       <d2-layout-header-aside-menu-item v-if="child.children === undefined" :menu="child" :key="childIndex"/>

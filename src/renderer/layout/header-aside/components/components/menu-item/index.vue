@@ -3,7 +3,7 @@
     <i v-if="menu.icon" :class="`fa fa-${menu.icon}`"></i>
     <d2-icon-svg v-else-if="menu.iconSvg" :name="menu.iconSvg"/>
     <i v-else class="fa fa-file-o"></i>
-    <span slot="title">{{menu.title || '未命名菜单'}}</span>
+    <span slot="title">{{menu.title || menu.name || '未命名菜单'}}</span>
   </el-menu-item>
 </template>
 
