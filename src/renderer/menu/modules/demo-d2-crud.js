@@ -1,7 +1,8 @@
 export default {
   path: '/demo/d2-crud',
   name: 'D2 CRUD',
-  iconSvg: 'd2-crud',
+  icon: 'table',
+  // iconSvg: 'd2-crud',
   children: (pre => [
     { path: `${pre}index`, name: 'D2 CRUD 首页', icon: 'home' },
     {
