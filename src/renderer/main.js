@@ -22,7 +22,10 @@ import 'v-contextmenu/dist/index.css'
 // [ 可选插件组件 ] JSON 树状视图
 import vueJsonTreeView from 'vue-json-tree-view'
 // [ 可选插件组件 ] 网格布局组件
-import { GridLayout, GridItem } from 'vue-grid-layout'
+import {
+  GridLayout,
+  GridItem
+} from 'vue-grid-layout'
 // [ 可选插件组件 ] 区域划分组件
 import SplitPane from 'vue-splitpane'
 
@@ -31,13 +34,14 @@ import router from './router'
 import menuHeader from '@/menu/header'
 import menuAside from '@/menu/aside'
 // import menuData from '@/menu/menuConfig'
-import { frameInRoutes } from '@/router/routes'
-// import ElementUI from 'element-ui'
-// import 'element-ui/lib/theme-chalk/index.css'
+import {
+  frameInRoutes
+} from '@/router/routes'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
-// import 'element-ui/lib/theme-chalk/display.css'
 // http://element-cn.eleme.io/#/zh-CN/component/layout
-// import 'element-ui/lib/theme-chalk/display.css'
+import 'element-ui/lib/theme-chalk/display.css'
 // import BootstrapVue from 'bootstrap-vue'
 // import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -59,7 +63,7 @@ Vue.use(Buefy, {
 
 // 核心插件
 Vue.use(d2Admin)
-// Vue.use(ElementUI)
+Vue.use(ElementUI)
 Vue.use(helper)
 // Vue.use(BootstrapVue)
 
@@ -78,7 +82,7 @@ new Vue({
   store,
   i18n,
   render: h => h(App),
-  created () {
+  created() {
     // 处理路由 得到每一级的路由设置
     this.$store.commit('d2admin/page/init', frameInRoutes)
     // 设置顶栏菜单
@@ -88,7 +92,7 @@ new Vue({
     // 初始化菜单搜索功能
     this.$store.commit('d2admin/search/init', menuAside)
   },
-  mounted () {
+  mounted() {
     // 展示系统信息
     this.$store.commit('d2admin/releases/versionShow')
     // 检查最新版本

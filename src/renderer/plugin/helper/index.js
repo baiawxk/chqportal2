@@ -17,7 +17,7 @@ export default {
     // 3. 注入组件
     Vue.mixin({
       methods: {
-        openMenu (index, indexPath) {
+        open (index, indexPath) {
           if (/^https:\/\/|http:\/\//.test(index)) {
             opn(index)
           } else {
