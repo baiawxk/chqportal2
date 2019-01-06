@@ -3,6 +3,7 @@
     <template slot="header">导航</template>
     <el-container>
       <el-main>
+        <p>Current Menus:{{menus.length}}</p><br>
         <el-row :gutter="12">
           <el-col
             :span="6"
