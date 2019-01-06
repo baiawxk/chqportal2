@@ -1,7 +1,8 @@
 import layoutHeaderAside from '@/layout/header-aside'
 
 const meta = {
-  requiresAuth: false
+  requiresAuth: false,
+  cache: true
 }
 
 let demoNum = 30

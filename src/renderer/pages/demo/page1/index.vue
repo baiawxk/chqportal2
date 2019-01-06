@@ -1,6 +1,7 @@
 <template>
   <d2-container>
     <template slot="header">导航</template>
+    <el-input>test</el-input>
     <el-container>
       <el-main>
         <p>Current Menus:{{menus.length}}</p><br>
@@ -29,7 +30,10 @@
 import _ from "lodash";
 
 export default {
-  name: "page1",
+  name: "demo-page1",
+  created: function() {
+    console.log("created");
+  },
   data: function() {
     let menus = this.$store.state.menu.menu;
     menus = _.filter(menus, menu => {

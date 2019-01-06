@@ -1,0 +1,574 @@
+{
+  "shortcut": [
+    {
+      "id": "d367a880-065a-11e9-9910-37d95f6a2379",
+      "name": "GitHub Desktop.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\GitHub Desktop.lnk",
+      "type": "file"
+    },
+    {
+      "id": "d367f6a0-065a-11e9-9910-37d95f6a2379",
+      "name": "Microsoft Edge.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Microsoft Edge.lnk",
+      "type": "file"
+    },
+    {
+      "id": "d367f6a1-065a-11e9-9910-37d95f6a2379",
+      "name": "火萤酱.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\火萤酱.lnk",
+      "type": "file"
+    },
+    {
+      "id": "d367f6a2-065a-11e9-9910-37d95f6a2379",
+      "name": "Quicker.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Quicker.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf0de90-065a-11e9-a940-e977b486d55b",
+      "name": "Visual Studio Code.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Visual Studio Code.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf153c0-065a-11e9-a940-e977b486d55b",
+      "name": "迅雷.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\迅雷.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf153c1-065a-11e9-a940-e977b486d55b",
+      "name": "Quicker.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Quicker.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf153c2-065a-11e9-a940-e977b486d55b",
+      "name": "Nuxt.js.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Nuxt.js.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf153c3-065a-11e9-a940-e977b486d55b",
+      "name": "Vuetify.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vuetify.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf153c4-065a-11e9-a940-e977b486d55b",
+      "name": "Git Bash.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Git Bash.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf153c5-065a-11e9-a940-e977b486d55b",
+      "name": "WeGame.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\WeGame.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf17ad0-065a-11e9-a940-e977b486d55b",
+      "name": "网易邮箱大师.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\网易邮箱大师.lnk",
+      "type": "file"
+    },
+    {
+      "id": "dbf17ad1-065a-11e9-a940-e977b486d55b",
+      "name": "Microsoft Edge.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Microsoft Edge.lnk",
+      "type": "file"
+    },
+    {
+      "id": "ebc76f50-065a-11e9-a940-e977b486d55b",
+      "name": "老婆的东西",
+      "path": "C:\\Users\\Administrator\\Desktop\\老婆的东西",
+      "type": "file"
+    },
+    {
+      "id": "ebc76f51-065a-11e9-a940-e977b486d55b",
+      "name": "火萤视频桌面.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\火萤视频桌面.lnk",
+      "type": "file"
+    },
+    {
+      "id": "595f28f0-065b-11e9-bbed-192288b9489d",
+      "name": "幕布.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\幕布.lnk",
+      "type": "file"
+    },
+    {
+      "id": "595f7710-065b-11e9-bbed-192288b9489d",
+      "name": "老公的东西",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西",
+      "type": "file"
+    },
+    {
+      "id": "5c32e260-065b-11e9-bbed-192288b9489d",
+      "name": "老婆的东西",
+      "path": "C:\\Users\\Administrator\\Desktop\\老婆的东西",
+      "type": "file"
+    },
+    {
+      "id": "5c32e261-065b-11e9-bbed-192288b9489d",
+      "name": "GitHub Desktop.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\GitHub Desktop.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e262-065b-11e9-bbed-192288b9489d",
+      "name": "Microsoft Edge.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Microsoft Edge.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e263-065b-11e9-bbed-192288b9489d",
+      "name": "Visual Studio Code.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Visual Studio Code.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e264-065b-11e9-bbed-192288b9489d",
+      "name": "迅雷.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\迅雷.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e265-065b-11e9-bbed-192288b9489d",
+      "name": "CC助手.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\CC助手.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e266-065b-11e9-bbed-192288b9489d",
+      "name": "wechat.bat",
+      "path": "C:\\Users\\Administrator\\Desktop\\wechat.bat",
+      "type": "file"
+    },
+    {
+      "id": "5c32e267-065b-11e9-bbed-192288b9489d",
+      "name": "幕布.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\幕布.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e268-065b-11e9-bbed-192288b9489d",
+      "name": "火萤视频桌面.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\火萤视频桌面.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e269-065b-11e9-bbed-192288b9489d",
+      "name": "火萤酱.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\火萤酱.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e26a-065b-11e9-bbed-192288b9489d",
+      "name": "Quicker.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Quicker.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e26b-065b-11e9-bbed-192288b9489d",
+      "name": "Nuxt.js.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Nuxt.js.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e26c-065b-11e9-bbed-192288b9489d",
+      "name": "Vuetify.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vuetify.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e26d-065b-11e9-bbed-192288b9489d",
+      "name": "Iceworks.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Iceworks.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e26e-065b-11e9-bbed-192288b9489d",
+      "name": "Vue.js.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vue.js.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e26f-065b-11e9-bbed-192288b9489d",
+      "name": "Firefox.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Firefox.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e270-065b-11e9-bbed-192288b9489d",
+      "name": "Git Bash.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Git Bash.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e271-065b-11e9-bbed-192288b9489d",
+      "name": "WeGame.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\WeGame.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e272-065b-11e9-bbed-192288b9489d",
+      "name": "网易邮箱大师.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\网易邮箱大师.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e273-065b-11e9-bbed-192288b9489d",
+      "name": "网易云音乐.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\网易云音乐.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e274-065b-11e9-bbed-192288b9489d",
+      "name": "微信.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\微信.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5c32e275-065b-11e9-bbed-192288b9489d",
+      "name": "老公的东西",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西",
+      "type": "file"
+    },
+    {
+      "id": "85659b50-065b-11e9-bbed-192288b9489d",
+      "name": "老婆的东西",
+      "path": "C:\\Users\\Administrator\\Desktop\\老婆的东西",
+      "type": "file"
+    },
+    {
+      "id": "85659b51-065b-11e9-bbed-192288b9489d",
+      "name": "GitHub Desktop.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\GitHub Desktop.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b52-065b-11e9-bbed-192288b9489d",
+      "name": "Microsoft Edge.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Microsoft Edge.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b53-065b-11e9-bbed-192288b9489d",
+      "name": "Visual Studio Code.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Visual Studio Code.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b54-065b-11e9-bbed-192288b9489d",
+      "name": "迅雷.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\迅雷.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b55-065b-11e9-bbed-192288b9489d",
+      "name": "CC助手.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\CC助手.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b56-065b-11e9-bbed-192288b9489d",
+      "name": "wechat.bat",
+      "path": "C:\\Users\\Administrator\\Desktop\\wechat.bat",
+      "type": "file"
+    },
+    {
+      "id": "85659b57-065b-11e9-bbed-192288b9489d",
+      "name": "幕布.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\幕布.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b58-065b-11e9-bbed-192288b9489d",
+      "name": "火萤视频桌面.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\火萤视频桌面.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b59-065b-11e9-bbed-192288b9489d",
+      "name": "火萤酱.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\火萤酱.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b5a-065b-11e9-bbed-192288b9489d",
+      "name": "Quicker.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Quicker.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b5b-065b-11e9-bbed-192288b9489d",
+      "name": "Nuxt.js.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Nuxt.js.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b5c-065b-11e9-bbed-192288b9489d",
+      "name": "Vuetify.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vuetify.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b5d-065b-11e9-bbed-192288b9489d",
+      "name": "Iceworks.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Iceworks.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b5e-065b-11e9-bbed-192288b9489d",
+      "name": "Vue.js.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vue.js.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b5f-065b-11e9-bbed-192288b9489d",
+      "name": "Firefox.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Firefox.lnk",
+      "type": "file"
+    },
+    {
+      "id": "85659b60-065b-11e9-bbed-192288b9489d",
+      "name": "Git Bash.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\Git Bash.lnk",
+      "type": "file"
+    },
+    {
+      "id": "8565c260-065b-11e9-bbed-192288b9489d",
+      "name": "WeGame.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\WeGame.lnk",
+      "type": "file"
+    },
+    {
+      "id": "8565c261-065b-11e9-bbed-192288b9489d",
+      "name": "网易邮箱大师.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\网易邮箱大师.lnk",
+      "type": "file"
+    },
+    {
+      "id": "8565c262-065b-11e9-bbed-192288b9489d",
+      "name": "网易云音乐.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\网易云音乐.lnk",
+      "type": "file"
+    },
+    {
+      "id": "8565c263-065b-11e9-bbed-192288b9489d",
+      "name": "微信.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\微信.lnk",
+      "type": "file"
+    },
+    {
+      "id": "8565c264-065b-11e9-bbed-192288b9489d",
+      "name": "老公的东西",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西",
+      "type": "file"
+    },
+    {
+      "id": "be32f800-065c-11e9-bbed-192288b9489d",
+      "name": "火萤酱.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\火萤酱.lnk",
+      "type": "file"
+    },
+    {
+      "type": "uri",
+      "id": "c160b850-065c-11e9-bbed-192288b9489d",
+      "uri": "https://www.baidu.com/?tn=98012088_10_dg&ch=3",
+      "name": "https://www.baidu.com/?tn=98012088_10_dg&ch=3"
+    },
+    {
+      "id": "eb0768c0-065c-11e9-bbed-192288b9489d",
+      "name": "wechat.bat",
+      "path": "C:\\Users\\Administrator\\Desktop\\wechat.bat",
+      "type": "file"
+    },
+    {
+      "id": "f67213e0-065c-11e9-bbed-192288b9489d",
+      "name": "WeGame.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\WeGame.lnk",
+      "type": "file"
+    },
+    {
+      "id": "f84c0400-065c-11e9-bbed-192288b9489d",
+      "name": "网易邮箱大师.lnk",
+      "path": "C:\\Users\\Public\\Desktop\\网易邮箱大师.lnk",
+      "type": "file"
+    },
+    {
+      "id": "f98ebd30-065c-11e9-bbed-192288b9489d",
+      "name": "Vuetify.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vuetify.lnk",
+      "type": "file"
+    },
+    {
+      "id": "fa65bc40-065c-11e9-bbed-192288b9489d",
+      "name": "Iceworks.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Iceworks.lnk",
+      "type": "file"
+    },
+    {
+      "id": "fc1233c0-065c-11e9-bbed-192288b9489d",
+      "name": "Vue.js.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vue.js.lnk",
+      "type": "file"
+    },
+    {
+      "id": "fd210bb0-065c-11e9-bbed-192288b9489d",
+      "name": "Iceworks.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Iceworks.lnk",
+      "type": "file"
+    },
+    {
+      "id": "fdd95f30-065c-11e9-bbed-192288b9489d",
+      "name": "Vuetify.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vuetify.lnk",
+      "type": "file"
+    },
+    {
+      "id": "fe992cc0-065c-11e9-bbed-192288b9489d",
+      "name": "Nuxt.js.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Nuxt.js.lnk",
+      "type": "file"
+    },
+    {
+      "id": "fe992cc1-065c-11e9-bbed-192288b9489d",
+      "name": "Vuetify.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vuetify.lnk",
+      "type": "file"
+    },
+    {
+      "id": "fe992cc2-065c-11e9-bbed-192288b9489d",
+      "name": "Iceworks.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Iceworks.lnk",
+      "type": "file"
+    },
+    {
+      "id": "fe992cc3-065c-11e9-bbed-192288b9489d",
+      "name": "Vue.js.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\Vue.js.lnk",
+      "type": "file"
+    },
+    {
+      "type": "uri",
+      "id": "04972410-065d-11e9-bbed-192288b9489d",
+      "uri": "https://fairyever.gitee.io/d2-admin-preview/#/index",
+      "name": "https://fairyever.gitee.io/d2-admin-preview/#/index"
+    },
+    {
+      "id": "5e3384d0-0691-11e9-92e2-7123b0bea196",
+      "name": "FreeMind.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\FreeMind.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431530-0691-11e9-92e2-7123b0bea196",
+      "name": "GitHub Desktop.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\GitHub Desktop.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431531-0691-11e9-92e2-7123b0bea196",
+      "name": "HBuilder.exe.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\HBuilder.exe.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431532-0691-11e9-92e2-7123b0bea196",
+      "name": "movie.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\movie.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431533-0691-11e9-92e2-7123b0bea196",
+      "name": "OneNote 2016.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\OneNote 2016.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431534-0691-11e9-92e2-7123b0bea196",
+      "name": "Sublime Text 3.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\Sublime Text 3.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431535-0691-11e9-92e2-7123b0bea196",
+      "name": "uedit64.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\uedit64.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431536-0691-11e9-92e2-7123b0bea196",
+      "name": "WeGame.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\WeGame.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431537-0691-11e9-92e2-7123b0bea196",
+      "name": "小米共享.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\小米共享.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431538-0691-11e9-92e2-7123b0bea196",
+      "name": "小米路由器.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\小米路由器.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431539-0691-11e9-92e2-7123b0bea196",
+      "name": "迅雷.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\迅雷.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e43153a-0691-11e9-92e2-7123b0bea196",
+      "name": "迅雷影音.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\迅雷影音.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e43153b-0691-11e9-92e2-7123b0bea196",
+      "name": "英雄联盟WeGame版.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\英雄联盟WeGame版.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e43153c-0691-11e9-92e2-7123b0bea196",
+      "name": "workspace",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\workspace",
+      "type": "file"
+    },
+    {
+      "id": "5e43153d-0691-11e9-92e2-7123b0bea196",
+      "name": "Beyond Compare 4.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\Beyond Compare 4.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e43153e-0691-11e9-92e2-7123b0bea196",
+      "name": "ChqPortal.exe.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\ChqPortal.exe.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e43153f-0691-11e9-92e2-7123b0bea196",
+      "name": "cmder.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\cmder.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431540-0691-11e9-92e2-7123b0bea196",
+      "name": "download.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\download.lnk",
+      "type": "file"
+    },
+    {
+      "id": "5e431541-0691-11e9-92e2-7123b0bea196",
+      "name": "FileZilla Client.lnk",
+      "path": "C:\\Users\\Administrator\\Desktop\\老公的东西\\FileZilla Client.lnk",
+      "type": "file"
+    }
+  ]
+}
