@@ -1,7 +1,6 @@
 <template>
   <d2-container>
     <template slot="header">导航</template>
-    <el-input>test</el-input>
     <el-container>
       <el-main>
         <p>Current Menus:{{menus.length}}</p><br>
