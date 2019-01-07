@@ -12,3 +12,8 @@ bower_components
 yarn-error.log
 yarn.lock
 !.gitkeep
+src\renderer\db\bookmarks.json
+src\renderer\db\data.json
+src\renderer\db\juejin.json
+src\renderer\db\shouqu.json
+src\renderer\db\todos.json
