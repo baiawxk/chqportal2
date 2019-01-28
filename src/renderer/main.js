@@ -37,33 +37,33 @@ import menuAside from '@/menu/aside'
 import {
   frameInRoutes
 } from '@/router/routes'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
 
 // http://element-cn.eleme.io/#/zh-CN/component/layout
-import 'element-ui/lib/theme-chalk/display.css'
+// import 'element-ui/lib/theme-chalk/display.css'
 // import BootstrapVue from 'bootstrap-vue'
 // import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import helper from './plugin/helper'
 
-import Buefy from 'buefy'
+// import Buefy from 'buefy'
 // import { Table } from 'buefy/dist/components/table'
 // import { Input } from 'buefy/dist/components/input'
-import 'buefy/dist/buefy.css'
+// import 'buefy/dist/buefy.css'
 // import 'material-design-icons/iconfont/material-icons.css'
 // https://buefy.github.io/documentation/start
-Vue.use(Buefy, {
-  defaultIconPack: 'mdi'
-  // defaultContainerElement: '#content'
-})
+// Vue.use(Buefy, {
+//   defaultIconPack: 'mdi'
+//   // defaultContainerElement: '#content'
+// })
 // Vue.component('b-table', Table)
 // Vue.component('b-input', Input)
 
 // 核心插件
 Vue.use(d2Admin)
-Vue.use(ElementUI)
+// Vue.use(ElementUI)
 Vue.use(helper)
 // Vue.use(BootstrapVue)
 
