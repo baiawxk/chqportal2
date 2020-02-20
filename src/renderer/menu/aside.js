@@ -26,16 +26,16 @@ import demos from './demos'
 //   })
 // }
 
-const menuAside = [
-  demoComponents,
-  demoPlugins,
-  demoCharts,
-  demoElement,
-  demoPlayground,
-  demoBusiness,
-  demoD2Crud,
-  demoFrame
-]
+// const menuAside = [
+//   demoComponents,
+//   demoPlugins,
+//   demoCharts,
+//   demoElement,
+//   demoPlayground,
+//   demoBusiness,
+//   demoD2Crud,
+//   demoFrame
+// ]
 
 // 菜单 侧边栏
 export default [{
