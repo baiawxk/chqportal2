@@ -50,7 +50,10 @@
       </el-aside>
       <el-main>
         <div>
-          <el-input></el-input>
+          <el-input
+            v-model="urlInput"
+            @keyup.enter.native="addUrl"
+          ></el-input>
         </div>
         <br>
         <div>
@@ -98,6 +101,13 @@ export default {
   created: function() {
     console.log("created");
   },
+  methods: {
+    addUrl() {
+      this.doUrl(this.urlInput);
+      this.urlInput = "";
+    },
+    doUrl(url) {}
+  },
   data: function() {
     let menus = this.$store.state.menu.menu;
     menus = _.filter(menus, menu => {
@@ -105,7 +115,9 @@ export default {
     });
 
     return {
-      menus
+      menus,
+      urlInput: "",
+      urlList: {}
     };
   }
 };

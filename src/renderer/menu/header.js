@@ -6,11 +6,11 @@ export default [{
     title: '首页',
     icon: 'home'
   },
-  {
-    title: '演示页面',
-    icon: 'folder-o',
-    children: [
-      ...demos
-    ]
-  }
+  // {
+  //   title: '演示页面',
+  //   icon: 'folder-o',
+  //   children: [
+  //     ...demos
+  //   ]
+  // }
 ]
