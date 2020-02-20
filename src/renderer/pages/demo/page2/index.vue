@@ -7,8 +7,6 @@
             <el-menu
               default-active="2"
               class="el-menu-vertical-demo"
-              @open="handleOpen"
-              @close="handleClose"
             >
               <el-menu-item-group>
                 <template slot="title">Collect</template>
@@ -107,7 +105,29 @@
               </el-collapse-item>
             </el-collapse>
           </el-row>
+
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
+          <h1>fdljsafjdsjfdsajf</h1>
         </el-main>
+        <el-footer>
+          fdsafdsafjdlsk
+        </el-footer>
       </el-container>
     </el-container>
   </d2-container>
