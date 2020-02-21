@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import chqDndBoard from "@/views/dashboard/chqDndBoard";
-import chqDndItem from "@/views/dashboard/chqDndItem";
-import mirouter from "@/utils/mirouter";
+import chqDndBoard from "@/pages/dashboard/chqDndBoard";
+import chqDndItem from "@/pages/dashboard/chqDndItem";
+import mirouter from "@/libs/mirouter";
 export default {
   name: "chqMiRouter",
   components: {

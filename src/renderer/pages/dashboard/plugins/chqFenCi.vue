@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import chqDndBoard from "@/views/dashboard/chqDndBoard";
-import chqDndItem from "@/views/dashboard/chqDndItem";
+import chqDndBoard from "@/pages/dashboard/chqDndBoard";
+import chqDndItem from "@/pages/dashboard/chqDndItem";
 export default {
   name: "chqFenCi",
   components: {

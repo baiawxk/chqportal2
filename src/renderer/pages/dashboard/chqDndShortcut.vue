@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import chqDndItem from "@/views/dashboard/chqDndItem";
+import chqDndItem from "@/pages/dashboard/chqDndItem";
 export default {
   name: "chqDndShortcut",
   components: {

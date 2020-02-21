@@ -43,6 +43,11 @@ export default [{
     title: '首页',
     icon: 'home'
   },
+  {
+    path: '/dashboard',
+    title: 'Dashboard',
+    icon: 'home'
+  },
   // ...menuAside,
   // {
   //   title: '演示页面',

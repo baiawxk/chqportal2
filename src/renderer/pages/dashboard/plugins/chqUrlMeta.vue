@@ -2,15 +2,19 @@
 <template>
   <div>
     <chqDndBoard @drop="dropHandle">
-      <chqDndItem @click.native="info" title="Url Meta Fetch" icon="fa-search"></chqDndItem>
+      <chqDndItem
+        @click.native="info"
+        title="Url Meta Fetch"
+        icon="fa-search"
+      ></chqDndItem>
     </chqDndBoard>
   </div>
 </template>
 
 <script>
-import chqDndBoard from "@/views/dashboard/chqDndBoard";
-import chqDndItem from "@/views/dashboard/chqDndItem";
-import util from "@/utils/pluginUtils";
+import chqDndBoard from "@/pages/dashboard/chqDndBoard";
+import chqDndItem from "@/pages/dashboard/chqDndItem";
+import util from "@/libs/pluginUtils";
 export default {
   name: "chqUrlMeta",
   components: {
