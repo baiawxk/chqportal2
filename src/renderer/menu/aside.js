@@ -50,8 +50,8 @@ export default [{
   },
   {
     path: '/searchmv',
-    title: 'searchmv',
-    icon: 'home'
+    title: '搜电影',
+    icon: 'search'
   },
   ...menuAside
   // {

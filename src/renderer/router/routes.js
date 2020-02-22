@@ -49,7 +49,7 @@ const frameIn = [{
       name: 'searchmv',
       meta: {
         ...meta,
-        title: 'SearchMV'
+        title: '搜电影'
       },
       component: () => import('@/pages/searchmv')
     }]
