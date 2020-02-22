@@ -1,6 +1,7 @@
 import opn from 'opn'
 import uuid from 'uuid/v1'
-
+import iconv from 'iconv-lite'
+import gbk from 'gbk-string'
 
 export default {
   install(Vue, options) {
@@ -20,6 +21,9 @@ export default {
     Vue.mixin({
       methods: {
         uuid,
+        encodeURIgbk(str) {
+          return gbk.encodeGBK(str)
+        },
         open(index, indexPath) {
           if (/^https:\/\/|http:\/\//.test(index)) {
             opn(index)

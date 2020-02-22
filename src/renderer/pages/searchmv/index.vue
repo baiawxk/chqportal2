@@ -18,6 +18,7 @@
             :key="url"
           >
             <div class="urlItem">
+              {{url}}
               <webview
                 class="d2-container-frame"
                 :src="url"
@@ -50,7 +51,13 @@ export default {
     urlAry() {
       return this.kw === ""
         ? []
-        : [`http://v.yizhansou.com/mv/search?kw=${this.kw}`];
+        : [
+            `http://v.yizhansou.com/mv/search?kw=${this.kw}`,
+            `http://cili.q5p.cc/plus/s/index.asp?keyword=${this.gb2312kw}`
+          ];
+    },
+    gb2312kw() {
+      return this.encodeURIgbk(this.kw);
     }
   },
   methods: {
