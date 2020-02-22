@@ -48,6 +48,11 @@ export default [{
     title: 'Dashboard',
     icon: 'home'
   },
+  {
+    path: '/searchmv',
+    title: 'searchmv',
+    icon: 'home'
+  },
   // ...menuAside,
   // {
   //   title: '演示页面',

@@ -38,6 +38,22 @@ const frameIn = [{
       component: () => import('@/pages/dashboard')
     }]
   },
+  {
+    path: '/',
+    redirect: {
+      name: 'searchmv'
+    },
+    component: layoutHeaderAside,
+    children: [{
+      path: 'searchmv',
+      name: 'searchmv',
+      meta: {
+        ...meta,
+        title: 'SearchMV'
+      },
+      component: () => import('@/pages/searchmv')
+    }]
+  },
   demo,
   {
     path: '/demo/playground',

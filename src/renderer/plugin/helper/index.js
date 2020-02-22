@@ -1,7 +1,9 @@
 import opn from 'opn'
+import uuid from 'uuid/v1'
+
 
 export default {
-  install (Vue, options) {
+  install(Vue, options) {
     // 1. 添加全局方法或属性
     // Vue.myGlobalMethod = function () {
     //   // 逻辑...
@@ -17,7 +19,8 @@ export default {
     // 3. 注入组件
     Vue.mixin({
       methods: {
-        open (index, indexPath) {
+        uuid,
+        open(index, indexPath) {
           if (/^https:\/\/|http:\/\//.test(index)) {
             opn(index)
           } else {
