@@ -45,8 +45,8 @@ export default [{
   },
   {
     path: '/dashboard',
-    title: 'Dashboard',
-    icon: 'home'
+    title: '工具面板',
+    icon: 'puzzle-piece'
   },
   {
     path: '/searchmv',

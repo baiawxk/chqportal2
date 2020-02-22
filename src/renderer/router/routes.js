@@ -33,7 +33,7 @@ const frameIn = [{
       name: 'dashboard',
       meta: {
         ...meta,
-        title: 'Dashboard'
+        title: '工具面板'
       },
       component: () => import('@/pages/dashboard')
     }]
