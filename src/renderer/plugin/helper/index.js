@@ -21,6 +21,7 @@ export default {
     Vue.mixin({
       methods: {
         uuid,
+        opn,
         encodeURIgbk(str) {
           return gbk.encodeGBK(str)
         },
