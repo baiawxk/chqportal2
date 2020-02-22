@@ -1,6 +1,6 @@
 <template>
-  <d2-container>
-    <div>
+  <d2-container type="ghost">
+    <div style="height:600px;overflow:hidden;padding:10px;">
       <div>
         <el-input
           v-model="keywordInput"
@@ -8,25 +8,31 @@
         >
         </el-input>
       </div>
-      <div>
+      <div style="margin:10px;">
         <chqMiRouter></chqMiRouter>
       </div>
-      <div id="result">
+      <div
+        id="result"
+        class="frame_container"
+      >
         <div v-if="urlAry.length > 0">
           <div
             v-for="url in urlAry"
             :key="url"
+            class="frame_list_item"
           >
-            <div class="urlItem">
-              {{url}}
+            <el-card
+              class="box-card"
+              :body-style="{ height: '300px',margin:'20px'}"
+            >
               <webview
+                allowpopups
+                v-on:new-window="selfOpen"
                 class="d2-container-frame"
                 :src="url"
-                frameborder="10"
-                width="100%"
-                height="100%"
+                style="height:100%;width:100%;"
               />
-            </div>
+            </el-card>
           </div>
         </div>
       </div>
@@ -60,19 +66,28 @@ export default {
       return this.encodeURIgbk(this.kw);
     }
   },
+  mounted() {},
   methods: {
     search() {
       this.kw = this.keywordInput;
     },
-    dropHandle: function(items) {
-      this.$store.dispatch("add", items);
+    selfOpen(e) {
+      e.target.src = e.url;
     }
   }
 };
 </script>
 
 <style>
-.urlItem {
-  border: 10px;
+.frame_container {
+  padding: 0 0 300px 0;
+  overflow: scroll;
+  height: 100%;
+}
+.frame_list_item {
+  margin: 20px;
+}
+.frame_item_block {
+  margin: 20px;
 }
 </style>

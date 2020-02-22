@@ -26,16 +26,16 @@ import demos from './demos'
 //   })
 // }
 
-// const menuAside = [
-//   demoComponents,
-//   demoPlugins,
-//   demoCharts,
-//   demoElement,
-//   demoPlayground,
-//   demoBusiness,
-//   demoD2Crud,
-//   demoFrame
-// ]
+const menuAside = [
+  demoComponents,
+  demoPlugins,
+  demoCharts,
+  demoElement,
+  demoPlayground,
+  demoBusiness,
+  demoD2Crud,
+  demoFrame
+]
 
 // 菜单 侧边栏
 export default [{
@@ -53,7 +53,7 @@ export default [{
     title: 'searchmv',
     icon: 'home'
   },
-  // ...menuAside,
+  ...menuAside
   // {
   //   title: '演示页面',
   //   icon: 'folder-o',
