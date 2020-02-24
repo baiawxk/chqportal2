@@ -53,6 +53,11 @@ export default [{
     title: '搜电影',
     icon: 'search'
   },
+  {
+    path: '/url',
+    title: 'url',
+    icon: 'url'
+  },
   ...menuAside
   // {
   //   title: '演示页面',

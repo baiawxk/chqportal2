@@ -54,6 +54,22 @@ const frameIn = [{
       component: () => import('@/pages/searchmv')
     }]
   },
+  {
+    path: '/',
+    redirect: {
+      name: 'url'
+    },
+    component: layoutHeaderAside,
+    children: [{
+      path: 'url',
+      name: 'url',
+      meta: {
+        ...meta,
+        title: 'Add Url'
+      },
+      component: () => import('@/pages/url')
+    }]
+  },
   demo,
   {
     path: '/demo/playground',
