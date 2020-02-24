@@ -62,10 +62,12 @@ export default {
         ? []
         : [
             `http://v.yizhansou.com/mv/search?kw=${this.kw}`,
-            `http://cili.q5p.cc/plus/s/index.asp?keyword=${this.gb2312kw}`
+            `http://yyetss.com/Search/index/?s_keys=${this.kw}`,
+            `http://s.ygdy8.com/plus/s0.php?typeid=1&keyword=${this.gbkKW}`,
+            `http://cili.q5p.cc/plus/s/index.asp?keyword=${this.gbkKW}`
           ];
     },
-    gb2312kw() {
+    gbkKW() {
       return this.encodeURIgbk(this.kw);
     }
   },
