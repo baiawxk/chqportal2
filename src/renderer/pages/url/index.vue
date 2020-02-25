@@ -9,13 +9,45 @@
       </el-input>
     </div>
     <div v-if="list != null ">
-      <div
-        v-for="item in list"
-        :key="item"
+      <el-table
+        :data="list"
+        style="width: 100%"
       >
-        {{item.url}}
-      </div>
-
+        <el-table-column
+          prop="id"
+          label="UUID"
+          width="240"
+        >
+        </el-table-column>
+        <el-table-column
+          prop="url"
+          label="URL"
+          width="240"
+        >
+        </el-table-column>
+        <el-table-column
+          prop="ts"
+          label="TIME"
+          width="180"
+        >
+        </el-table-column>
+        <el-table-column
+          fixed="right"
+          label="操作"
+          width="240"
+        >
+          <template slot-scope="props">
+            <el-button
+              type="primary"
+              @click="delItem(props.row)"
+            >Upd</el-button>
+            <el-button
+              type="primary"
+              @click="delItem({id:props.row.id})"
+            >Del</el-button>
+          </template>
+        </el-table-column>
+      </el-table>
     </div>
   </d2-container>
 </template>
@@ -38,14 +70,18 @@ export default {
     ...mapGetters("chqadmin/url", ["find", "has"]),
     ...mapActions("chqadmin/url", ["add", "del", "upd"]),
     addUrl(e) {
-      window.abc = this;
       if (this.urlInput != "") {
         let obj = {
           url: this.urlInput
         };
         this.add(obj);
+        console.log(this.list.length);
         this.urlInput = "";
       }
+    },
+    delItem(condition) {
+      this.del(condition);
+      console.log(this.list.length);
     }
   }
 };

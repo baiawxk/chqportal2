@@ -13,15 +13,15 @@ let urlDB = database.get('url');
 export default {
     namespaced: true,
     getters: {
-        list() {
+        list(state, getters) {
             return urlDB.value();
         },
-        find(state) {
+        find(state, getters) {
             return function (condition) {
                 return urlDB.find(condition).value();
             }
         },
-        has(state) {
+        has(state, getters) {
             return function (condition) {
                 return urlDB.has(condition).value();
             }
@@ -36,6 +36,7 @@ export default {
         }, urlobj) {
             commit('add', {
                 id: uuid(),
+                ts: +new Date(),
                 ...urlobj
             });
 
@@ -56,7 +57,7 @@ export default {
             urlDB.push(urlobj).write();
         },
         del(state, condition) {
-            urlDB.find(condition).remove(condition).write();
+            urlDB.remove(condition).write();
         },
         upd(state, condition, value) {
             urlDB.find(condition).assign(value).write();
