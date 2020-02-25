@@ -1,5 +1,6 @@
 import db from '@/libs/db'
 import uuid from 'uuid/v1'
+import _ from 'lodash'
 
 
 
@@ -32,38 +33,55 @@ export default {
     },
     actions: {
         add({
-            commit
+            commit,
+            dispatch
         }, urlobj) {
             commit('add', {
                 id: uuid(),
                 ts: +new Date(),
                 ...urlobj
             });
-
+            dispatch('store')
         },
         del({
-            commit
+            commit,
+            dispatch
         }, condition) {
             commit('del', condition);
+            dispatch('store')
         },
         upd({
-            commit
+            commit,
+            dispatch
         }, condition, value) {
             commit('upd', condition, value)
+            dispatch('store')
+        },
+        store({
+            dispatch
+        }) {
+            dispatch('d2admin/db/set', {
+                path: 'chqurl.data',
+                data: urlDB.value(),
+                user: true
+            }, {
+                root: true
+            })
         }
     },
     mutations: {
         add(state, urlobj) {
-            urlDB.push(urlobj).write();
+            state.data.push(urlobj)
         },
         del(state, condition) {
-            urlDB.remove(condition).write();
+            _.remove(state.data, condition)
+            state.data.sort();
         },
         upd(state, condition, value) {
-            urlDB.find(condition).assign(value).write();
+            _.assign(state.data, condition, value)
         }
     },
     state: {
-
+        data: urlDB.value()
     }
 }

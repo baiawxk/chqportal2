@@ -11,6 +11,7 @@
     <div v-if="list != null ">
       <el-table
         :data="list"
+        row-key="id"
         style="width: 100%"
       >
         <el-table-column
@@ -57,15 +58,15 @@ import { mapGetters, mapActions } from "vuex";
 
 export default {
   data() {
+    let list = this.$store.state.chqadmin.url.data;
     return {
       urlInput: "",
       labels: [],
-      table: []
+      table: [],
+      list
     };
   },
-  computed: {
-    ...mapGetters("chqadmin/url", ["list"])
-  },
+  computed: {},
   methods: {
     ...mapGetters("chqadmin/url", ["find", "has"]),
     ...mapActions("chqadmin/url", ["add", "del", "upd"]),
@@ -75,13 +76,12 @@ export default {
           url: this.urlInput
         };
         this.add(obj);
-        console.log(this.list.length);
         this.urlInput = "";
       }
     },
     delItem(condition) {
       this.del(condition);
-      console.log(this.list.length);
+      this.$forceUpdate();
     }
   }
 };
