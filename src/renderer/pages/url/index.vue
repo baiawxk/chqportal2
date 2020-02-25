@@ -88,12 +88,16 @@ export default {
         let obj = {
           url: this.urlInput
         };
+        let timeout = 3000;
         const loading = this.$loading({
           lock: true,
           text: "Loading",
           spinner: "el-icon-loading",
           background: "rgba(0, 0, 0, 0.7)"
         });
+        setTimeout(() => {
+          loading.close();
+        }, timeout);
         await this.add(obj);
         loading.close();
         this.urlInput = "";
