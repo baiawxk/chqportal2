@@ -83,12 +83,19 @@ export default {
   methods: {
     ...mapGetters("chqadmin/url", ["find", "has"]),
     ...mapActions("chqadmin/url", ["add", "del", "upd"]),
-    addUrl(e) {
+    async addUrl(e) {
       if (this.urlInput != "") {
         let obj = {
           url: this.urlInput
         };
-        this.add(obj);
+        const loading = this.$loading({
+          lock: true,
+          text: "Loading",
+          spinner: "el-icon-loading",
+          background: "rgba(0, 0, 0, 0.7)"
+        });
+        await this.add(obj);
+        loading.close();
         this.urlInput = "";
       }
     },
