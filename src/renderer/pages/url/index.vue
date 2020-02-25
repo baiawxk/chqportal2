@@ -81,7 +81,6 @@ export default {
     },
     delItem(condition) {
       this.del(condition);
-      this.$forceUpdate();
     }
   }
 };
