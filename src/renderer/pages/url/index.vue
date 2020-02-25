@@ -12,7 +12,7 @@
       <el-table
         stripe
         height="400"
-        :default-sort="{prop: 'ts', order: 'descending'}"
+        :default-sort="{prop: 'ts'}"
         :data="list"
         row-key="id"
         style="width: 100%"
@@ -39,11 +39,12 @@
         >
         </el-table-column>
         <el-table-column
-          sortable
-          prop="ts"
           label="TIME"
           width="180"
         >
+          <template slot-scope="scope">
+            <span style="margin-left: 10px">{{ scope.row.ts | fromNow }}</span>
+          </template>
         </el-table-column>
         <el-table-column
           fixed="right"

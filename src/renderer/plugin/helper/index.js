@@ -2,6 +2,7 @@ import opn from 'opn'
 import uuid from 'uuid/v1'
 import iconv from 'iconv-lite'
 import gbk from 'gbk-string'
+import filters from './filters'
 
 export default {
   install(Vue, options) {
@@ -19,6 +20,7 @@ export default {
     // })
     // 3. 注入组件
     Vue.mixin({
+      ...filters,
       methods: {
         uuid,
         opn,
