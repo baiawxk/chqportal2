@@ -10,23 +10,36 @@
     </div>
     <div v-if="list != null ">
       <el-table
+        stripe
+        height="400"
+        :default-sort="{prop: 'ts', order: 'descending'}"
         :data="list"
         row-key="id"
         style="width: 100%"
       >
         <el-table-column
-          prop="id"
-          label="UUID"
+          sortable
+          label="Title"
+          prop="title"
           width="240"
         >
         </el-table-column>
         <el-table-column
-          prop="url"
+          sortable
+          label="iconUrl"
+          prop="iconUrl"
+          width="240"
+        >
+        </el-table-column>
+        <el-table-column
+          sortable
           label="URL"
+          prop="url"
           width="240"
         >
         </el-table-column>
         <el-table-column
+          sortable
           prop="ts"
           label="TIME"
           width="180"
@@ -34,18 +47,17 @@
         </el-table-column>
         <el-table-column
           fixed="right"
-          label="操作"
           width="240"
         >
           <template slot-scope="props">
             <el-button
               type="primary"
               @click="delItem(props.row)"
-            >Upd</el-button>
+            >修改</el-button>
             <el-button
               type="primary"
               @click="delItem({id:props.row.id})"
-            >Del</el-button>
+            >删除</el-button>
           </template>
         </el-table-column>
       </el-table>

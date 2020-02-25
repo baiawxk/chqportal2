@@ -55,8 +55,8 @@ export default [{
   },
   {
     path: '/url',
-    title: 'url',
-    icon: 'url'
+    title: '添加书签',
+    icon: 'search'
   },
   ...menuAside
   // {

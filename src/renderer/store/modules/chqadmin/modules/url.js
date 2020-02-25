@@ -2,6 +2,7 @@ import db from '@/libs/db'
 import uuid from 'uuid/v1'
 import _ from 'lodash'
 
+import util from "@/libs/pluginUtils";
 
 
 let database = db.get('database');
@@ -32,14 +33,17 @@ export default {
 
     },
     actions: {
-        add({
+        async add({
             commit,
             dispatch
         }, urlobj) {
+            let meta = await util.getUrlMeta(urlobj['url']);
+            console.log(meta);
             commit('add', {
                 id: uuid(),
                 ts: +new Date(),
-                ...urlobj
+                ...urlobj,
+                ...meta
             });
             dispatch('store')
         },
