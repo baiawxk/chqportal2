@@ -14,6 +14,7 @@
         height="400"
         :default-sort="{prop: 'ts'}"
         :data="list"
+        :row-style="{height:'80px'}"
         row-key="id"
         style="width: 100%"
       >
@@ -26,15 +27,15 @@
         </el-table-column>
         <el-table-column
           sortable
-          label="iconUrl"
-          prop="iconUrl"
+          label="URL"
+          prop="url"
           width="240"
         >
         </el-table-column>
         <el-table-column
           sortable
-          label="URL"
-          prop="url"
+          label="iconUrl"
+          prop="iconUrl"
           width="240"
         >
         </el-table-column>
